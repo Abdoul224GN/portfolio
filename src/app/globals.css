@@ -72,7 +72,7 @@ body {
     --chart-3: #454f58;
     --chart-4: #454749;
     --chart-5: #e1e4e9;
-    --radius: 50%;
+    --radius: 0.5rem;
     --sidebar: oklch(0.985 0 0);
     --sidebar-foreground: oklch(0.141 0.005 285.823);
     --sidebar-primary: oklch(0.21 0.006 285.885);
@@ -89,6 +89,6 @@ body {
     @apply border-border outline-ring/50;
     }
   body {
-    @apply bg-background text-foreground text-base;
+    @apply bg-background text-foreground text-base m-4;
     }
 }
