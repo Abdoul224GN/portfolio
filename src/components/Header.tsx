@@ -13,7 +13,7 @@ export default function Header() {
                 <div
                     className="rounded-full border-border border-2 bg-muted h-full w-[125px] flex justify-between items-center pl-0.5 pr-0.5 pt-0 ">
 
-                    <a href="#" className="h-full"><GithubIcon className={`hover:bg-accent ${linkStyle}`}/></a>
+                    <a href="#" className="h-full"><GithubIcon className={`${linkStyle}`}/></a>
                     <a href="#" className="h-full"><LinkDin className={linkStyle}/></a>
                     <a href="#" className="h-full"><TwitterIcon className={linkStyle} /></a>
                 </div>
