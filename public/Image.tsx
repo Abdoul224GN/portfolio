@@ -1,19 +1,19 @@
-import {ComponentPropsWithoutRef} from "react";
+import {JSX} from "react";
 
-export function GithubIcon(props: ComponentPropsWithoutRef<"svg"> & { size?: number }) {
+export function GithubIcon({className}:{className?:string}):JSX.Element {
+    return <>
+        <img src="images/github.png" className={`h-full ${className}` } alt="github" />
+    </>
+}
+
+export function LinkDin({className}:{className?:string}) {
     return (
-        <img src="images/github.png" className="h-full" alt="github" />
+        <img src="images/linkedin.png" className={`h-full ${className}`} alt="linkedin" />
     )
 }
 
-export function LinkDin(props: ComponentPropsWithoutRef<"svg"> & { size?: number }) {
+export function TwitterIcon({className}:{className?:string}) {
     return (
-        <img src="images/linkedin.png" className="h-full" alt="linkedin" />
-    )
-}
-
-export function TwitterIcon(props: ComponentPropsWithoutRef<"svg"> & { size?: number }) {
-    return (
-        <img src="images/twitter.png" className="h-full" alt="twitter" />
+        <img src="images/twitter.png" className={`h-full ${className}`} alt="twitter" />
     )
 }
