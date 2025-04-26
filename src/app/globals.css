@@ -83,6 +83,10 @@ body, html {
     --sidebar-ring: oklch(0.705 0.015 286.067);
 }
 
+.font-jetbrains {
+    font-family: 'JetBrains Mono', monospace;
+}
+
 
 @layer base {
     * {
