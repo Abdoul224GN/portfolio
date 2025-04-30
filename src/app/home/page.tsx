@@ -2,6 +2,7 @@ import {Button} from "@/components/ui/button";
 import {FacebookIcon, GithubIcon, InstagramIcon, LinkDin, TwitterIcon} from "../../../public/Image";
 import Link from "@/components/ui/Link";
 import Avatar from "./Avatar";
+import Stats from "@/app/home/Stats";
 
 export default function Home() {
     return <>
@@ -38,6 +39,9 @@ export default function Home() {
                 <div className={`order-1 flex items-end justify-end md:w-2/5`}>
                     <Avatar/>
                 </div>
+            </div>
+            <div className={`flex items-center justify-center w-full`}>
+                <Stats/>
             </div>
         </section>
     </>
