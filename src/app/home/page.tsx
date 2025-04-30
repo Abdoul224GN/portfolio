@@ -3,11 +3,11 @@ import {FacebookIcon, GithubIcon, InstagramIcon, LinkDin, TwitterIcon} from "../
 import Link from "@/components/ui/Link";
 import Avatar from "./Avatar";
 import Stats from "@/app/home/Stats";
+import Header from "@/components/Header";
 
 export default function Home() {
     return <>
-        {/*<Header/>*/
-        }
+        <Header/>
         <section className={` flex flex-col justify-items-center h-full md:px-5 lg:px-30`}>
 
             <div className={`flex flex-col md:flex-row items-center`}>
