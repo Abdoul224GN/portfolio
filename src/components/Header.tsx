@@ -5,7 +5,7 @@ import Nav from "@/components/Nav";
 export default function Header() {
     const linkStyle :string = "hover:opacity-75 transition-opacity";
     return <>
-        <header className="h-8  flex justify-between items-center w-full">
+        <header className="h-8  flex justify-between items-center w-full mb-10">
             <p className=" flex-1/3 text-2xl">Abdoul<span className="text-accent">.</span></p>
             <Nav/>
             <div
