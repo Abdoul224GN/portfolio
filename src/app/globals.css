@@ -46,6 +46,9 @@ body, html {
     --color-sidebar-border: var(--sidebar-border);
     --color-sidebar-ring: var(--sidebar-ring);
 }
+.border-2{
+    border: 1.4px solid var(--border);
+}
 
 :root {
     --background: #23282d;
