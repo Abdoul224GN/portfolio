@@ -4,6 +4,7 @@ import Link from "@/components/ui/Link";
 import Avatar from "./Avatar";
 import Stats from "@/app/home/Stats";
 import Header from "@/components/Header";
+import Side from "@/components/Side";
 
 export default function Home() {
     return <>
@@ -42,6 +43,11 @@ export default function Home() {
             </div>
             <div className={`flex items-center justify-center w-full`}>
                 <Stats/>
+            </div>
+            <div>
+                <Side orientation={"left"}/>
+                <Side orientation={"right"}/>
+
             </div>
         </section>
     </>
