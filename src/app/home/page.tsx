@@ -10,7 +10,7 @@ import {motion} from "framer-motion";
 
 export default function Home() {
     return <>
-        <motion.div initial={{opacity: 0}} animate={{opacity: 1}} transition={{duration: 1, ease: "backIn"}}>
+        <motion.div initial={{opacity: 0}} animate={{opacity: 1}} transition={{duration: 0.5, ease: "backIn"}}>
             <Header/>
             <section className={` flex flex-col justify-items-center h-full md:px-5 lg:px-30`}>
 
@@ -48,8 +48,8 @@ export default function Home() {
                     <Stats/>
                 </div>
                 <div>
-                    <Side orientation={"left"}/>
-                    <Side orientation={"right"}/>
+                    <Side orientation={"left"}>abdoul.karim@gmail.com</Side>
+                    <Side orientation={"right"} className={``}>github.com/abdoul/site</Side>
                 </div>
             </section>
         </motion.div>
