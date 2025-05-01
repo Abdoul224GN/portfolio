@@ -49,7 +49,7 @@ export default function Home() {
                 </div>
                 <div>
                     <Side orientation={"left"}>abdoul.karim@gmail.com</Side>
-                    <Side orientation={"right"} className={``}>github.com/abdoul/site</Side>
+                    <Side orientation={"right"} className={``}>    github.com/abdoul/site</Side>
                 </div>
             </section>
         </motion.div>
