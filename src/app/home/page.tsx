@@ -11,7 +11,7 @@ export default function Home() {
         <section className={` flex flex-col justify-items-center h-full md:px-5 lg:px-30`}>
 
             <div className={`flex flex-col md:flex-row items-center`}>
-                <div className="order-2 md:w-3/5 flex flex-col md:order-none pt-10">
+                <div className="order-2 md:w-3/5 flex flex-col md:order-none py-5">
                     <p className={`text-center md:text-left`}>FullStack Software Developper</p>
                     <h1 className="md:text-7xl md:text-left  text-4xl  text-center font-semibold text-foreground">Hello
                         I'm<br/> <span
