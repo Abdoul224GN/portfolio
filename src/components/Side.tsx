@@ -7,7 +7,7 @@ export default function Side({className, orientation, children}: {
 }) {
     return <>
         <div
-            className={`fixed ${orientation == "left" && `left-12`} ${orientation == "right" && `right-12`} bottom-0 w-0`}>
+            className={`fixed ${orientation == "left" && `left-12`} ${orientation == "right" && `right-12`} bottom-0 w-0 max-lg:hidden`}>
             <div>
                 <ul className={`flex flex-col items-center w-full`}>
                     <li className={`rotate-90 pr-50 font-thin whitespace-pre`}>{children}</li>
