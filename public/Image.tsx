@@ -26,7 +26,7 @@ export function FacebookIcon({className}:{className?:string}) {
 
 export function InstagramIcon({className}:{className?:string}) {
     return (
-        <img src="images/Instagram.png" className={`h-full ${className}`} alt="instagram" />
+        <img src="images/instagram.png" className={`h-full ${className}`} alt="instagram" />
     )
 }
 export function AvatarImg({className}:{className?:string}) {
