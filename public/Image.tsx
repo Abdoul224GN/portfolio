@@ -34,3 +34,8 @@ export function AvatarImg({className}:{className?:string}) {
         <img src="images/Avatar.png" className={`h-full ${className}`} alt="avatar" />
     )
 }
+export function MenuImg({className}:{className?:string}) {
+    return (
+        <img src="images/menu.png" className={`h-full ${className}`} alt="menu" />
+    )
+}
