@@ -4,13 +4,18 @@ import Nav from "@/components/Nav";
 import {useState} from "react";
 import {Button} from "@/components/ui/button";
 import MobileNav from "@/components/MobileNav";
+import {motion} from "framer-motion";
 
 export default function Header() {
     const [toggle, setToggle] = useState(false);
     const linkStyle: string = "hover:opacity-75 transition-opacity";
     console.log(toggle)
+    const boxVariants = {
+        visible: {y: 0, opacity: 1},
+        hidden: {y: -100, opacity: 0},
+    }
     return <>
-        <header className="h-8 flex flex-col justify-between items-center w-full mb-15">
+        <header className="h-8 flex flex-col justify-between items-center w-full mb-5 max-md:mb-10">
             <div className={`flex items-center justify-between w-full h-full`}>
                 <p className=" flex-1/3 text-2xl">Abdoul<span className="text-accent">.</span></p>
                 <Button className={`md:hidden size-9 p-0 pb-[1px]`} onClick={() => setToggle((prev) => !prev)}>
@@ -26,9 +31,10 @@ export default function Header() {
                     </div>
                 </div>
             </div>
-            <div className={`pt-2 w-full flex items-center justify-center`}>
-                {toggle && <MobileNav/>}
-            </div>
+            <motion.div animate={toggle ? boxVariants.visible : boxVariants.hidden} transition={{type:"spring"}}
+                        className={`pt-2 w-full flex items-center justify-center`}>
+                <MobileNav/>
+            </motion.div>
         </header>
     </>
 }

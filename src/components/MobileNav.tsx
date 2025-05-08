@@ -7,7 +7,7 @@ export default function MobileNav() {
     return <>
         <nav className={`h-full border-2 border-accent rounded-full px-6 flex gap-3 md:hidden`}>
             {link.map((link, index) => (
-                <Link className={`${pathname === link.path && "text-accent underline decoration-dashed transition-all text-[0.9rem]" } text-[0.9rem] hover:text-accent
+                <Link className={`${pathname === link.path && "text-accent transition-all text-[0.9rem]" } text-[0.9rem] hover:text-accent
                     `} href={link.path} key={index} >{link.name}</Link>
             ))}
         </nav>
