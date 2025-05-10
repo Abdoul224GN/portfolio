@@ -2,6 +2,8 @@
 
 import CountUp from "react-countup";
 
+import {jetbrains} from "@/app/font";
+
 export default function Stats() {
     const stats = [
         {
@@ -29,7 +31,7 @@ export default function Stats() {
         <div className={`grid grid-cols-2 gap-2 md:flex md:flex-row justify-between w-full flex-col`}>
             {stats.map((item) => {
                 return <div className={`flex items-center justify-center md:justify-start gap-1 `}>
-                    <CountUp className={`md:text-6xl text-4xl font-bold font-jetbrains`} end={item.num} key={item.id} duration={2}
+                    <CountUp className={`md:text-6xl text-4xl ${jetbrains.className}`} end={item.num} key={item.id} duration={2}
                              delay={2}/>
                     <p className={`${item.text.length < 20 ? "max-w-[100px]" : "max-w-[150px]"}`}>{item.text}</p>
                 </div>

@@ -1,12 +1,13 @@
 import type {Metadata} from "next";
-import {Geist, Geist_Mono} from "next/font/google";
 import "./globals.css";
+import {barlow} from "@/app/font";
 
 
-export const metadata: Metadata = {
+const metadata: Metadata = {
     title: "Abdoul Karim Diallo",
     description: "Portfolio de Abdoul Karim Diallo développeur web passionné spécialisé en développement front-end et back end. Découvrez mes projet, compétences et experiences.",
 };
+
 
 export default function RootLayout({
                                        children,
@@ -14,7 +15,8 @@ export default function RootLayout({
     children: React.ReactNode;
 }>) {
     return (
-        <html lang="en">
+        <html lang="en" className={
+                barlow.className}>
         <body
 
         >
