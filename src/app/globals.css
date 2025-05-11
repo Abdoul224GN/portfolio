@@ -98,3 +98,7 @@ body, html {
         @apply bg-background text-foreground text-base m-4;
     }
 }
+
+.text-outline{
+    -webkit-text-stroke: 1px var(--muted-foreground);
+}
