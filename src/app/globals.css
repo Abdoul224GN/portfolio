@@ -102,3 +102,6 @@ body, html {
 .text-outline{
     -webkit-text-stroke: 1px var(--muted-foreground);
 }
+.border-2{
+    border: 1px solid var(--accent);
+}
