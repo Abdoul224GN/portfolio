@@ -1,4 +1,5 @@
 import {jetbrains} from "@/app/font";
+import {motion} from "framer-motion";
 
 export default function Box({children, className}: { children?: React.ReactNode, className?: string }) {
     const project = [
@@ -8,40 +9,59 @@ export default function Box({children, className}: { children?: React.ReactNode,
             description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium ad architecto debitis delectus',
         },
         {
-            id: 1,
+            id: 2,
             title: 'Web Developement',
             description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium ad architecto debitis delectus',
         },
         {
-            id: 1,
+            id: 3,
             title: 'Web Developement',
             description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium ad architecto debitis delectus',
         },
         {
-            id: 1,
+            id: 4,
             title: 'Web Developement',
             description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium ad architecto debitis delectus',
         },
         {
-            id: 1,
+            id: 5,
             title: 'Web Developement',
             description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium ad architecto debitis delectus',
         },
         {
-            id: 1,
+            id: 6,
+            title: 'Web Developement',
+            description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium ad architecto debitis delectus',
+        },
+        {
+            id: 7,
+            title: 'Web Developement',
+            description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium ad architecto debitis delectus',
+        },
+        {
+            id: 8,
+            title: 'Web Developement',
+            description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium ad architecto debitis delectus',
+        },
+        {
+            id: 9,
             title: 'Web Developement',
             description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium ad architecto debitis delectus',
         }
     ]
 
     return <>
-        {project.map((project) => {
-            return <div className={`border-2 border-accent bg-muted rounded-2xl p-5 ${className}`}>
+        <section className={`px-30 grid grid-cols-3 gap-4`}>
+            {project.map((project, index) => {
+                return <motion.div key={index}
+                                   className={`border-2 border-accent bg-muted rounded-2xl pointer p-5 ${className} cursor-pointer`}
+                                   whileHover={{translateY: -7.2}} transition={{duration: 0.1, ease: "easeInOut"}}>
                 <span
-                    className={`text-[2.5rem] font-bold text-outline text-transparent ${jetbrains.className}`}>01</span>
-                <p>{project.title}</p>
-                <p>{project.description}</p>
-            </div>
-        })}
+                    className={`text-[2.5rem] font-bold text-outline text-transparent ${jetbrains.className}`}>{project.id}</span>
+                    <p className={`text-[20px] font-semibold mb-2`}>{project.title}</p>
+                    <p className={`text-[15px]`}>{project.description}</p>
+                </motion.div>
+            })}
+        </section>
     </>
 }
