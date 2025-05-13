@@ -8,46 +8,55 @@ export default function Box({children, className}: { children?: React.ReactNode,
             id: 1,
             title: 'Web Developement',
             description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium ad architecto debitis delectus',
+            link: "#"
         },
         {
             id: 2,
             title: 'Web Developement',
             description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium ad architecto debitis delectus',
+            link: "#"
         },
         {
             id: 3,
             title: 'Web Developement',
             description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium ad architecto debitis delectus',
+            link: "#"
         },
         {
             id: 4,
             title: 'Web Developement',
-            description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium ad architecto debitis delectus',
+            description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium ad architect',
+            link: "#"
         },
         {
             id: 5,
             title: 'Web Developement',
             description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium ad architecto debitis delectus',
+            link: "#"
         },
         {
             id: 6,
             title: 'Web Developement',
             description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium ad architecto debitis delectus',
+            link: "#"
         },
         {
             id: 7,
             title: 'Web Developement',
             description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium ad architecto debitis delectus',
+            link: "#"
         },
         {
             id: 8,
             title: 'Web Developement',
             description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium ad architecto debitis delectus',
+            link: "#"
         },
         {
             id: 9,
             title: 'Web Developement',
             description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium ad architecto debitis delectus',
+            link: "#"
         }
     ]
 
@@ -56,13 +65,14 @@ export default function Box({children, className}: { children?: React.ReactNode,
             {project.map((project, index) => {
                 return <motion.div key={index}
                                    className={`group border-2 border-accent bg-muted rounded-[10px] pointer p-5 ${className} cursor-pointer`}
-                                   whileHover={{translateY: -7.2, translateX:-7.2}} transition={{duration: 0.1, ease: "easeInOut"}}>
+                                   whileHover={{translateY: -7.2, translateX: -7.2}}
+                                   transition={{duration: 0.1, ease: "easeInOut"}}>
                     <div className={` flex flex-row h-[45px] items-center justify-between hover:text-accent`}>
                         <span
                             className={`group-hover:text-outline-colored text-[2.5rem] font-bold text-outline text-transparent ${jetbrains.className}`}>
                             {project.id}
                         </span>
-                        <ExternalLink className={`rotate-90 hover:rotate-0 transition-all`}/>
+                        <a href={project.link}><ExternalLink className={`rotate-90 hover:rotate-0 transition-all`}/></a>
                     </div>
                     <p className={`group-hover:text-accent text-[20px] font-semibold mb-2w transition-all`}>{project.title}</p>
                     <p className={`text-[15px]`}>{project.description}</p>
