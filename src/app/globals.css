@@ -45,7 +45,7 @@ body, html {
     --color-sidebar-border: var(--sidebar-border);
     --color-sidebar-ring: var(--sidebar-ring);
 }
-.border-2{
+.border-2 {
     border: 1.3px solid var(--border);
 }
 
@@ -94,14 +94,20 @@ body, html {
     * {
         @apply border-border outline-ring/50;
     }
+
     body {
         @apply bg-background text-foreground text-base m-4;
     }
 }
 
-.text-outline{
-    -webkit-text-stroke: 1px var(--muted-foreground);
+.text-outline {
+    -webkit-text-stroke: 1px var(--accent);
 }
-.border-2{
+
+.text-outline-colored {
+    -webkit-text-stroke: 1px var(--accent);
+}
+
+.border-2 {
     border: 1px solid var(--accent);
 }
