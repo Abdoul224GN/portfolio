@@ -71,19 +71,19 @@ export default function Box({children, className}: { children?: React.ReactNode,
         hidden: {opacity: 0, y: 20},
         visible: (i: number) => ({
             opacity: 1, y: 0, transition: {
-                duration: 0.3, ease: 'easeInOut', delay: i * 0.1
+                duration: 0.4, ease: 'easeInOut', delay: i * 0.15
             }
         }),
         exit: (i: number) => ({
             opacity: 0, y: -20, transition: {
-                duration: 0.3, ease: 'easeInOut', delay: i * 0.1
+                duration: 0.4, ease: 'easeInOut', delay: i * 0.15
             }
         })
     }
     return <>
         <section className={`flex flex-col gap-5 items-center`}>
             <AnimatePresence>
-                <motion.div className={`px-30 grid grid-cols-3 gap-4`} transition={{staggerChildren: 0.2}}>
+                <motion.div className={`px-30 max-sm:p-3 max-lg:p-5 grid grid-cols-3 max-lg:grid-cols-2 max-sm:grid-cols-1 gap-4 scroll-smooth`} transition={{staggerChildren: 0.2}}>
                     {projectToShow && projectToShow.map((project, index) => {
                         return <motion.div key={index}
                                            className={`shadow shadow-black/30 group bg-muted rounded-[10px] pointer p-5 ${className} cursor-pointer`}
