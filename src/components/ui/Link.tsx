@@ -3,12 +3,12 @@ import React from "react";
 import {cn} from "@/lib/utils";
 
 const linkVariants = cva(
-    "h-9 rounded-full size-9 border-2 border-accent hover:bg-accent hover:cursor-pointer transition-all",
+    "h-9 rounded-full size-9 bg-muted shadow shadow-black/20 hover:bg-accent hover:cursor-pointer transition-all",
     {
         variants: {
             variant: {
                 default:
-                    "h-9 rounded-full border-2 border-accent hover:bg-accent hover:cursor-pointer",
+                    "h-9 rounded-full border-2  hover:bg-accent hover:cursor-pointer",
                 normal:
                     "h-9",
 
