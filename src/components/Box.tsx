@@ -97,7 +97,7 @@ export default function Box({children, className}: { children?: React.ReactNode,
                     transition={{staggerChildren: 0.2}}>
                     {projectToShow && projectToShow.map((project, index) => {
                         return <motion.div key={index}
-                                           className={`shadow shadow-black/30 group bg-muted rounded-[10px] pointer p-5 ${className} cursor-pointer`}
+                                           className={`shadow-md shadow-black/15 group bg-muted rounded-[10px] pointer p-5 ${className} cursor-pointer`}
                                            variants={boxVariants}
                                            custom={index}
                                            whileHover={`hover`}
