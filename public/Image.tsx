@@ -39,3 +39,8 @@ export function MenuImg({className}:{className?:string}) {
         <img src="images/menu.png" className={`h-full ${className}`} alt="menu" />
     )
 }
+export function Photo1({className}:{className?:string}) {
+    return (
+        <img src="images/photot1.png" className={`h-full ${className}`} alt="menu" />
+    )
+}
