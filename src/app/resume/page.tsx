@@ -1,5 +1,6 @@
 import Header from "@/components/Header";
 import {Photo1} from "../../../public/Image";
+import Stats from "./Stats";
 
 export default function Resume() {
     return <>
@@ -14,6 +15,7 @@ export default function Resume() {
             <div>
                 <h1 className={`text-accent text-3xl font-semibold`}>UI/UX Designer</h1>
                 <p className={`text-[15px] leading-relaxed mt-2`}>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias animi aperiam, cupiditate deserunt dolores eligendi esse expedita explicabo fugiat in iste maiores modi molestias mollitia nihil nisi placeat suscipit voluptatum?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum error exercitationem explicabo, fuga ipsam nisi possimus sapiente. Consectetur dignissimos esse nesciunt pferspiciatis tempora veritatis vitae! Delectus deleniti excepturi maxime veniam.</p>
+                <Stats/>
             </div>
         </section>
     </>
