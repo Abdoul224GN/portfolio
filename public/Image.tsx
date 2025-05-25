@@ -1,4 +1,5 @@
 import {JSX} from "react";
+import Image from "next/image";
 
 export function GithubIcon({className}:{className?:string}):JSX.Element {
     return <>
@@ -41,6 +42,6 @@ export function MenuImg({className}:{className?:string}) {
 }
 export function Photo1({className}:{className?:string}) {
     return (
-        <img src="images/photot1.png" className={`h-full ${className}`} alt="menu" />
+        <Image src="/images/photo1.webp" width={250} height={250} className={`${className}`} alt="menu" />
     )
 }
