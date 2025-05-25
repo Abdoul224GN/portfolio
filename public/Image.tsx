@@ -40,8 +40,8 @@ export function MenuImg({className}:{className?:string}) {
         <img src="images/menu.png" className={`h-full ${className}`} alt="menu" />
     )
 }
-export function Photo1({className}:{className?:string}) {
+export function Photo({src, className, }:{className?:string, src:string}) {
     return (
-        <Image src="/images/photo1.webp" width={250} height={250} className={`${className}`} alt="menu" />
+        <Image src={src} width={250} height={250} className={`h-full ${className}`} alt="menu" />
     )
 }
