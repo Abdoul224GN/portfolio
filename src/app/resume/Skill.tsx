@@ -1,31 +1,77 @@
+"use client"
 import {Photo} from "../../../public/Image";
-import Stats from "@/app/resume/Stats";
+import CountUp from "react-countup";
 
 export default function Skill() {
     const skills = [
         {
             title: "UI/UX Designer",
             name: "Satisfaction Rate",
-            num: 90,
-            suffix: "%",
             description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias animi aperiam, cupiditate deserunt dolores eligendi esse expedita explicabo fugiat inte maiores modi molestias mollitia nihil nisi placeat suscipit voluptatum?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum error exercitationem explicabo, fuga ipsam nisi possimussapiente. Consectetur dignissimos esse nesciunt pferspiciatis tempora veritatis vitae! Delectus deleniti excepturi maxime veniam",
-            imageURL: "/images/photo1.webp"
+            imageURL: "/images/photo1.webp",
+            stats : [
+                {
+                    name: "Satisfaction Rate",
+                    num : 90,
+                    suffix:"%"
+                },
+                {
+                    name: "Year Experience",
+                    num : 15,
+                    suffix:"+"
+                },
+                {
+                    name: "UI Designs",
+                    num : 20,
+                    suffix:"+"
+                }
+            ]
         },
         {
             title: "FullStack Developer",
             name: "Year Experience",
-            num: 15,
-            suffix: "+",
             description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias animi aperiam, cupiditate deserunt dolores eligendi esse expedita explicabo fugiat inte maiores modi molestias mollitia nihil nisi placeat suscipit voluptatum?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum error exercitationem explicabo, fuga ipsam nisi possimussapiente. Consectetur dignissimos esse nesciunt pferspiciatis tempora veritatis vitae! Delectus deleniti excepturi maxime veniam",
-            imageURL: "/images/photo2.webp"
+            imageURL: "/images/photo2.webp",
+            stats : [
+                {
+                    name: "Satisfaction Rate",
+                    num : 90,
+                    suffix:"%"
+                },
+                {
+                    name: "Year Experience",
+                    num : 15,
+                    suffix:"+"
+                },
+                {
+                    name: "UI Designs",
+                    num : 20,
+                    suffix:"+"
+                }
+            ]
         },
         {
             title: "Software Engineering",
             name: "UI Designs",
-            num: 20,
-            suffix: "+",
             description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias animi aperiam, cupiditate deserunt dolores eligendi esse expedita explicabo fugiat inte maiores modi molestias mollitia nihil nisi placeat suscipit voluptatum?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum error exercitationem explicabo, fuga ipsam nisi possimussapiente. Consectetur dignissimos esse nesciunt pferspiciatis tempora veritatis vitae! Delectus deleniti excepturi maxime veniam",
-            imageURL: "/images/photo2.webp"
+            imageURL: "/images/photo2.webp",
+            stats : [
+                {
+                    name: "Satisfaction Rate",
+                    num : 90,
+                    suffix:"%"
+                },
+                {
+                    name: "Year Experience",
+                    num : 15,
+                    suffix:"+"
+                },
+                {
+                    name: "UI Designs",
+                    num : 20,
+                    suffix:"+"
+                }
+            ]
         }
     ]
     return <>
@@ -43,7 +89,14 @@ export default function Skill() {
                 <div className={`h-full ${index % 2 === 0 ? "order-1" : "order-2"}`}>
                     <h1 className={`text-accent text-3xl font-semibold`}>{skill.title}</h1>
                     <p className={`text-[15px] leading-relaxed mt-2`}>{skill.description}</p>
-                    <Stats/>
+                    <div className={`mt-7 grid grid-cols-3 gap-3 justify-center`}>
+                        {skill.stats.map((stat, index) => (
+                            <div className={`shadow-md bg-muted h-full rounded-xl border border-white/20 p-3 flex flex-col items-center`} key={index}>
+                                <CountUp className={`font-semibold text-[22px]`} end={stat.num} suffix={stat.suffix} />
+                                <p className={`text-[13px]`}>{stat.name}</p>
+                            </div>
+                        ))}
+                    </div>
                 </div>
             </div>
         ))}
