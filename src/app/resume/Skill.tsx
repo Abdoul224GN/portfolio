@@ -76,8 +76,8 @@ export default function Skill() {
     ]
     return <>
         {skills.map((skill, index) => (
-            <div className={`grid grid-cols-2 gap-x-10 h-auto mt-20 `} key={index}>
-                <div className={`group relative ${index % 2 === 0 ? "order-2" : "order-1"}`}>
+            <div className={`grid max-md:grid-cols-1 grid-cols-2 gap-x-10 h-auto mt-20 max-md:shadow-md max-md:bg-muted max-md:shadow-black/15 max-md:rounded-[10px] p-5 cursor-pointer`} key={index}>
+                <div className={`group max-md:hidden relative ${index % 2 === 0 ? "order-2" : "order-1"}`}>
                     <div
                         className={`group-hover:left-65 group-hover:-top-25 transition-all absolute top-65 -left-25 w-30 h-30 translate-14 bg-accent rounded-full `}>
                     </div>
