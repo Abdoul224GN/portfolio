@@ -1,7 +1,6 @@
 import type {Metadata} from "next";
 import "./globals.css";
 import {barlow} from "@/app/font";
-import {Particles} from "@/components/ui/particles"
 
 
 const metadata: Metadata = {
@@ -21,7 +20,6 @@ export default function RootLayout({
         <body
 
         >
-        <Particles className={`absolute inset-0 z-0`}/>
         <section>
             {children}
         </section>
