@@ -42,6 +42,6 @@ export function MenuImg({className}:{className?:string}) {
 }
 export function Photo({src, className, }:{className?:string, src:string}) {
     return (
-        <Image src={src} width={250} height={250} priority={true} className={` h-full w-auto ${className}`} alt="menu" />
+        <Image src={src} width={300} height={300} priority={true} className={` h-auto w-auto ${className}`} alt="menu" />
     )
 }
