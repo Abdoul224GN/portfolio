@@ -50,3 +50,8 @@ export function ContactPhoto({src, className, }:{className?:string, src?:string}
         <Image src={`/images/photo3.webp`} width={300} height={300} priority={true} className={` h-auto w-auto ${className}`} alt="menu" />
     )
 }
+export function AboutPhoto({src, className, }:{className?:string, src?:string}) {
+    return (
+        <Image src={`/images/photo2.webp`} width={300} height={300} priority={true} className={`w-auto ${className}`} alt="menu" />
+    )
+}
