@@ -33,7 +33,7 @@ export default function Contact() {
                         <div className={`flex flex-col`}>
                             <Label>Your Message</Label>
                             <textarea placeholder={`Your message`}
-                                      className={`py-1 px-3 focus:outline-none focus:ring focus:ring-accent bg-white/5 border border-white/20 rounded-xl`}></textarea>
+                                      className={`py-1 px-3 focus:outline-none focus:ring focus:ring-accent bg-white/5 border border-white/20 rounded-md text-sm`}></textarea>
                         </div>
                         <Button className={`bg-white/5`}>Send Message</Button>
                     </form>
