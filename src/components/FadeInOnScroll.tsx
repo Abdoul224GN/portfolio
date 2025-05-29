@@ -18,7 +18,7 @@ export default function FadeInOnScroll({
                                            className
                                        }: Props) {
     const controls = useAnimation();
-    const [ref, inView] = useInView({triggerOnce: true, threshold: 0.1});
+    const [ref, inView] = useInView({triggerOnce: true, threshold: 0.4});
 
     useEffect(() => {
         if (inView) {
