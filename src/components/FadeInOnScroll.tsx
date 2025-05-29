@@ -35,13 +35,13 @@ export default function FadeInOnScroll({
             y = 40;
             break;
         case 'down':
-            y = -40;
+            y = -60;
             break;
         case 'left':
             x = 40;
             break;
         case 'right':
-            x = -40;
+            x = -60;
             break;
     }
 
