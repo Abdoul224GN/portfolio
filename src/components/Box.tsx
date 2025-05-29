@@ -86,7 +86,7 @@ export default function Box({children, className}: { children?: React.ReactNode,
                         <motion.div key={index}
                                     className={`shadow-md shadow-black/15 group bg-muted rounded-[10px] pointer p-5 ${className} cursor-pointer h-auto`}
                                     custom={index}
-                                    whileHover={`hover`}
+                                    whileHover={{y:-8}}
                         >
                             <div className={` flex flex-row h-[45px] items-center justify-between hover:text-accent`}>
                         <span

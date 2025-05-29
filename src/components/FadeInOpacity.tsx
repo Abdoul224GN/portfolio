@@ -7,17 +7,15 @@ import {useEffect} from 'react';
 interface Props {
     children: React.ReactNode;
     delay?: number;
-    direction?: 'up' | 'down' | 'left' | 'right';
     className?: string;
     index?:number;
 }
 
-export default function FadeInOnScroll({
+export default function FadeInOpacity({
                                            children,
                                            delay = 0,
-                                           direction = 'up',
                                            className,
-    index
+                                           index
                                        }: Props) {
     const controls = useAnimation();
     const [ref, inView] = useInView({triggerOnce: true, threshold: 0.4});
@@ -28,34 +26,15 @@ export default function FadeInOnScroll({
         }
     }, [controls, inView]);
 
-    // Gestion du décalage initial selon la direction
-    let x = 0;
-    let y = 0;
-
-    switch (direction) {
-        case 'up':
-            y = 40;
-            break;
-        case 'down':
-            y = -60;
-            break;
-        case 'left':
-            x = 40;
-            break;
-        case 'right':
-            x = -60;
-            break;
-    }
-
     return (
         <motion.div
             ref={ref}
             initial="hidden"
             animate={controls}
-            transition={{duration: 0.3, delay,}}
+            transition={{duration: 0.6, delay}}
             variants={{
-                visible: {opacity: 1, x: 0, y: 0},
-                hidden: {opacity: 0, x, y},
+                visible: {opacity: 1},
+                hidden: {opacity: 0},
             }}
             key={index}
             className={className}
