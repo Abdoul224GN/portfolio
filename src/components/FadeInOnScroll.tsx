@@ -9,13 +9,15 @@ interface Props {
     delay?: number;
     direction?: 'up' | 'down' | 'left' | 'right';
     className?: string;
+    index?:number;
 }
 
 export default function FadeInOnScroll({
                                            children,
                                            delay = 0,
                                            direction = 'up',
-                                           className
+                                           className,
+    index
                                        }: Props) {
     const controls = useAnimation();
     const [ref, inView] = useInView({triggerOnce: true, threshold: 0.4});
@@ -55,6 +57,7 @@ export default function FadeInOnScroll({
                 visible: {opacity: 1, x: 0, y: 0},
                 hidden: {opacity: 0, x, y},
             }}
+            key={index}
             className={className}
         >
             {children}
