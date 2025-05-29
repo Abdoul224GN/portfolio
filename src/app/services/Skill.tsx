@@ -1,7 +1,5 @@
 "use client"
 import {Photo} from "../../../public/Image";
-import CountUp from "react-countup";
-import {jetbrains} from "@/app/font";
 
 export default function Skill() {
     const skills = [
@@ -81,9 +79,6 @@ export default function Skill() {
             <div className={`grid max-md:grid-cols-1 grid-cols-2 gap-x-13 h-auto mt-15 max-md:shadow-md max-md:bg-muted max-md:shadow-black/15 max-md:rounded-[10px] p-5 `} key={index}>
                 <div className={`group max-md:hidden relative ${index % 2 === 0 ? "order-2" : "order-1"}`}>
                     <div
-                        className={`group-hover:left-65 group-hover:-top-25 transition-all absolute top-60  -left-25 w-25 h-25 translate-14 bg-accent rounded-full `}>
-                    </div>
-                    <div
                         className={`backdrop-blur-md shadow-md border-white/20 border flex items-center justify-center bg-white/10 rounded-2xl h-full`}>
                         <Photo src={skill.imageURL} className={`rounded-2xl`}></Photo>
                     </div>
@@ -91,14 +86,6 @@ export default function Skill() {
                 <div className={`h-full ${index % 2 === 0 ? "order-1" : "order-2"}`}>
                     <h1 className={`text-accent text-3xl font-semibold`}>{skill.title}</h1>
                     <p className={`text-[15px] leading-relaxed mt-2`}>{skill.description}</p>
-                    <div className={`mt-7 grid grid-cols-3 gap-3 justify-center`}>
-                        {skill.stats.map((stat, index) => (
-                            <div className={`shadow-md bg-muted h-full rounded-xl border border-white/20 p-3 flex flex-col items-center`} key={index}>
-                                <CountUp className={`font-semibold text-[22px] ${jetbrains.className}`} end={stat.num} suffix={stat.suffix} />
-                                <p className={`text-[12px]`}>{stat.name}</p>
-                            </div>
-                        ))}
-                    </div>
                 </div>
             </div>
         ))}
