@@ -32,7 +32,7 @@ export function InstagramIcon({className}:{className?:string}) {
 }
 export function AvatarImg({className}:{className?:string}) {
     return (
-        <img src="images/Avatar.png" className={`h-full ${className}`} alt="avatar" />
+        <Image quality={100} width={300} height={300} src="/images/Avatar.webp" className={`h-full ${className} mix-blend-lighten transition-all`} alt="avatar" />
     )
 }
 export function MenuImg({className}:{className?:string}) {
