@@ -1,10 +1,8 @@
-import Header from "@/components/Header";
 import {AboutPhoto} from "../../../public/Image";
 
-export default function Work() {
+export default function AboutMe() {
     return <>
-        <Header/>
-        <section className={`px-30`}>
+        <section>
             <div
                 className={`grid max-md:grid-cols-1 grid-cols-2 gap-x-13 mt-5 max-md:shadow-md max-md:bg-muted max-md:shadow-black/15 max-md:rounded-[10px] p-5 h-[400px] `}>
                 <div

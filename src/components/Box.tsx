@@ -13,9 +13,9 @@ export default function Box({children, className}: { children?: React.ReactNode,
     const projectToShow = showMore ? firstSix : projects;
     console.log(showMore);
     return <>
-        <section className={`flex flex-col gap-5 items-center`}>
+        <section className={`w-full flex flex-col gap-5 items-center`}>
             <motion.div
-                className={`px-30 max-sm:p-3 max-lg:p-5 grid grid-cols-3 max-lg:grid-cols-2 max-sm:grid-cols-1 gap-4 scroll-smooth`}
+                className={`grid grid-cols-3 max-lg:grid-cols-2 max-sm:grid-cols-1 gap-4 scroll-smooth`}
                 transition={{staggerChildren: 0.2}}>
                 {projectToShow && projectToShow.map((project, index) => {
                     return <FadeInOnScroll key={project.id} delay={index * 0.2}>

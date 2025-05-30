@@ -1,4 +1,3 @@
-import Header from "@/components/Header";
 import {ContactPhoto} from "../../../public/Image";
 import Input from "@/components/ui/input";
 import Label from "@/components/ui/label";
@@ -8,8 +7,7 @@ import FadeInOpacity from "@/components/FadeInOpacity";
 
 export default function Contact() {
     return <>
-        <Header/>
-        <section className={`max-lg:mx-5 mx-30`}>
+        <section>
             <div
                 className={`shadow-md bg-muted grid max-md:grid-cols-1 grid-cols-[2fr_3fr] gap-5 max-md:p-5 p-10 rounded-2xl w-full`}>
                 <FadeInOnScroll direction={"right"} delay={0.2}>

@@ -1,10 +1,8 @@
-import Header from "@/components/Header";
 import Skill from "@/app/services/Skill";
 
-export default function Resume() {
+export default function Services() {
     return <>
-        <Header/>
-        <section className={`max-lg:px-5 px-30 h-full`}>
+        <section>
             <Skill/>
         </section>
     </>

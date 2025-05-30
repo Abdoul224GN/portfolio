@@ -4,15 +4,11 @@ import {FacebookIcon, GithubIcon, InstagramIcon, LinkDin, TwitterIcon} from "../
 import Link from "@/components/ui/Link";
 import Avatar from "./Avatar";
 import Stats from "@/app/home/Stats";
-import Header from "@/components/Header";
-import Side from "@/components/Side";
 import FadeInOnScroll from "@/components/FadeInOnScroll";
 
 export default function Home() {
     return <>
-
-        <Header/>
-        <section className={` flex flex-col justify-items-center h-full md:px-5 lg:px-30`}>
+        <section className={` flex flex-col justify-items-center h-full`}>
 
             <div className={`flex flex-col md:flex-row items-center`}>
 
@@ -49,10 +45,6 @@ export default function Home() {
             <FadeInOnScroll delay={0.6} className={`flex items-center justify-center w-full`}>
                 <Stats/>
             </FadeInOnScroll>
-            <div>
-                <Side orientation={"left"}>abdoul.karim@gmail.com</Side>
-                <Side orientation={"right"} className={``}> github.com/abdoul/site</Side>
-            </div>
         </section>
 
     </>
