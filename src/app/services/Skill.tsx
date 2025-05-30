@@ -1,79 +1,9 @@
 "use client"
 import {Photo} from "../../../public/Image";
 import FadeInOnScroll from "@/components/FadeInOnScroll";
+import {skills} from "@/components/data/service";
 
 export default function Skill() {
-    const skills = [
-        {
-            title: "UI/UX Designer",
-            name: "Satisfaction Rate",
-            description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias animi aperiam, cupiditate deserunt dolores eligendi esse expedita explicabo fugiat inte maiores modi molestias mollitia nihil nisi placeat suscipit voluptatum?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum error exercitationem explicabo, fuga ipsam nisi possimussapiente. Consectetur dignissimos esse nesciunt pferspiciatis tempora veritatis vitae! Delectus deleniti excepturi maxime veniam",
-            imageURL: "/images/DESIGN.webp",
-            stats: [
-                {
-                    name: "Satisfaction Rate",
-                    num: 90,
-                    suffix: "%"
-                },
-                {
-                    name: "Year Experience",
-                    num: 15,
-                    suffix: "+"
-                },
-                {
-                    name: "UI Designs",
-                    num: 20,
-                    suffix: "+"
-                }
-            ]
-        },
-        {
-            title: "FullStack Developer",
-            name: "Year Experience",
-            description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias animi aperiam, cupiditate deserunt dolores eligendi esse expedita explicabo fugiat inte maiores modi molestias mollitia nihil nisi placeat suscipit voluptatum?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum error exercitationem explicabo, fuga ipsam nisi possimussapiente. Consectetur dignissimos esse nesciunt pferspiciatis tempora veritatis vitae! Delectus deleniti excepturi maxime veniam",
-            imageURL: "/images/Engineering.png",
-            stats: [
-                {
-                    name: "Satisfaction Rate",
-                    num: 90,
-                    suffix: "%"
-                },
-                {
-                    name: "Year Experience",
-                    num: 15,
-                    suffix: "+"
-                },
-                {
-                    name: "UI Designs",
-                    num: 20,
-                    suffix: "+"
-                }
-            ]
-        },
-        {
-            title: "Software Engineering",
-            name: "UI Designs",
-            description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias animi aperiam, cupiditate deserunt dolores eligendi esse expedita explicabo fugiat inte maiores modi molestias mollitia nihil nisi placeat suscipit voluptatum?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum error exercitationem explicabo, fuga ipsam nisi possimussapiente. Consectetur dignissimos esse nesciunt pferspiciatis tempora veritatis vitae! Delectus deleniti excepturi maxime veniam",
-            imageURL: "/images/SEO.webp",
-            stats: [
-                {
-                    name: "Satisfaction Rate",
-                    num: 90,
-                    suffix: "%"
-                },
-                {
-                    name: "Year Experience",
-                    num: 15,
-                    suffix: "+"
-                },
-                {
-                    name: "UI Designs",
-                    num: 20,
-                    suffix: "+"
-                }
-            ]
-        }
-    ]
     return <>
         <title>Resume</title>
         {skills.map((skill, index) => (
