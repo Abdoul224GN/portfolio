@@ -29,8 +29,8 @@ export default function Stats() {
     ]
     return <>
         <div className={`grid grid-cols-2 gap-2 md:flex md:flex-row justify-between w-full flex-col`}>
-            {stats.map((item) => {
-                return <div className={`flex items-center justify-center md:justify-start gap-1 `}>
+            {stats.map((item,index) => {
+                return <div className={`flex items-center justify-center md:justify-start gap-1 `} key={index}>
                     <CountUp className={`md:text-6xl text-4xl ${jetbrains.className}`} end={item.num} key={item.id} duration={2}
                              delay={2}/>
                     <p className={`${item.text.length < 20 ? "max-w-[100px]" : "max-w-[150px]"}`}>{item.text}</p>
