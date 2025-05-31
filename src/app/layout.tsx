@@ -20,9 +20,7 @@ export default function RootLayout({
         <body
 
         >
-        <section>
             {children}
-        </section>
         </body>
         </html>
     );
