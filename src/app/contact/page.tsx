@@ -3,14 +3,13 @@ import Input from "@/components/ui/input";
 import Label from "@/components/ui/label";
 import {Button} from "@/components/ui/button";
 import FadeInOnScroll from "@/components/FadeInOnScroll";
-import FadeInOpacity from "@/components/FadeInOpacity";
 
 export default function Contact() {
     return <>
         <section>
             <div
                 className={`shadow-md bg-muted grid max-md:grid-cols-1 grid-cols-[2fr_3fr] gap-5 max-md:p-5 p-10 rounded-2xl w-full`}>
-                <FadeInOnScroll direction={"right"} delay={0.2}>
+                <FadeInOnScroll direction={"right"} delay={0.6}>
                     <div className={``}>
                         <div
                             className={`max-md:hidden backdrop-blur-2xl bg-white/10 border shadow-md border-white/20 rounded-2xl`}>
@@ -18,7 +17,8 @@ export default function Contact() {
                         </div>
                     </div>
                 </FadeInOnScroll>
-                <FadeInOpacity delay={0.1}>
+                <FadeInOnScroll direction={`left`} delay={0.2}>
+                        <p className={`mb-3`}>Have a project, question, or opportunity to share? Feel free to reach out using the form below. I’ll get back to you as soon as possible.</p>
                     <div className={`w-full`}>
                         <form className={`flex flex-col gap-y-5`}>
                             <div className={`grid grid-cols-2 gap-y-4 max-sm:grid-cols-1 gap-x-4`}>
@@ -43,7 +43,7 @@ export default function Contact() {
                             <Button className={`bg-white/5`}>Send Message</Button>
                         </form>
                     </div>
-                </FadeInOpacity>
+                </FadeInOnScroll>
             </div>
         </section>
     </>

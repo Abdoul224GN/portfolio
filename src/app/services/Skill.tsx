@@ -6,11 +6,10 @@ import {skills} from "@/components/data/service";
 export default function Skill() {
     return <>
         <section>
-            <title>Resume</title>
             {skills.map((skill, index) => (
 
                 <div
-                    className={`grid max-md:grid-cols-1 grid-cols-2 gap-x-13 h-auto mt-15 max-md:shadow-md max-md:bg-muted max-md:shadow-black/15 max-md:rounded-[10px] p-5 `}
+                    className={`grid max-md:grid-cols-1 grid-cols-2 gap-x-13 mt-15 max-md:shadow-md max-md:bg-muted max-md:shadow-black/15 max-md:rounded-[10px] p-5 h-[320px]`}
                     key={index}>
 
                     <div className={`group max-md:hidden relative h-full ${index % 2 === 0 ? "order-2" : "order-1"}`}>

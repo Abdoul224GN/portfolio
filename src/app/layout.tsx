@@ -15,13 +15,17 @@ export default function RootLayout({
     children: React.ReactNode;
 }>) {
     return (
+
         <html lang="en" className={
             barlow.className}>
+        <title>Abdoul Karim Diallo</title>
+
         <body
 
         >
-            {children}
+        {children}
         </body>
-        </html>
-    );
+</html>
+)
+    ;
 }
