@@ -2,14 +2,15 @@
 import {Photo} from "../../../public/Image";
 import FadeInOnScroll from "@/components/FadeInOnScroll";
 import {skills} from "@/components/data/service";
+import {Badge} from "@/components/Badge";
 
 export default function Skill() {
     return <>
         <section>
+            <Badge>Services</Badge>
             {skills.map((skill, index) => (
-
                 <div
-                    className={`grid max-md:grid-cols-1 grid-cols-2 gap-x-13 mt-15 max-md:shadow-md max-md:bg-muted max-md:shadow-black/15 max-md:rounded-[10px] p-5 h-[320px]`}
+                    className={`grid max-md:grid-cols-1 grid-cols-2 gap-x-13 mb-10 max-md:shadow-md max-md:bg-muted max-md:shadow-black/15 max-md:rounded-[10px] p-5 h-auto`}
                     key={index}>
 
                     <div className={`group max-md:hidden relative h-full ${index % 2 === 0 ? "order-2" : "order-1"}`}>

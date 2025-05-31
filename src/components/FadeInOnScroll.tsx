@@ -20,7 +20,7 @@ export default function FadeInOnScroll({
     index
                                        }: Props) {
     const controls = useAnimation();
-    const [ref, inView] = useInView({triggerOnce: true, threshold: 0.4});
+    const [ref, inView] = useInView({triggerOnce: true, threshold: 0.7});
 
     useEffect(() => {
         if (inView) {

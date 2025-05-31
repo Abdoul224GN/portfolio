@@ -3,12 +3,14 @@ import Input from "@/components/ui/input";
 import Label from "@/components/ui/label";
 import {Button} from "@/components/ui/button";
 import FadeInOnScroll from "@/components/FadeInOnScroll";
+import {Badge} from "@/components/Badge";
 
 export default function Contact() {
     return <>
         <section>
+            <Badge>Contact</Badge>
             <div
-                className={`shadow-md bg-muted grid max-md:grid-cols-1 grid-cols-[2fr_3fr] gap-5 max-md:p-5 p-10 rounded-2xl w-full`}>
+                className={`mt-7 shadow-md bg-muted grid max-md:grid-cols-1 grid-cols-[2fr_3fr] gap-5 max-md:p-5 p-10 rounded-2xl w-full`}>
                 <FadeInOnScroll direction={"right"} delay={0.6}>
                     <div className={``}>
                         <div
