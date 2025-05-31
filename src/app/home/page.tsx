@@ -5,6 +5,7 @@ import Link from "@/components/ui/Link";
 import Avatar from "./Avatar";
 import Stats from "@/app/home/Stats";
 import FadeInOnScroll from "@/components/FadeInOnScroll";
+import {JavaCode, NextjsCode} from "@/components/Badge";
 
 export default function Home() {
     return <>
@@ -18,9 +19,9 @@ export default function Home() {
                         I'm<br/> <span
                             className="text-accent">Abdoul Diallo</span>
                     </h1>
-                    <p className={`text-center md:text-left`}>
+                    <p className={`text-center md:text-left leading-relaxed`}>
                         Passionate full-stack developer. I build performance and intuitive
-                        application using framework like Spring Boot and NextJS. My
+                        application using <JavaCode/> framework <NextjsCode/>. My
                         focus is on code quality and optimal user experience. Each
                         project reflects my commitment to delivering innovative solution.
                     </p>
