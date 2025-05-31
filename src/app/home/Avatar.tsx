@@ -8,7 +8,7 @@ export default function Avatar() {
         <div className="h-full w-full relative">
             <motion.div className="flex items-center justify-center">
                 <div className={`absolute`}>
-                    <AvatarImg className={`rounded-full size-[300px] object-contain order-2 `}/>
+                    <AvatarImg className={`rounded-full h-auto w-auto object-contain order-2 `}/>
                 </div>
                 <motion.svg className={`h-[350px] w-[350px]`} fill="transparent" xmlns="http://www.w3.org/2000/svg"
                             viewBox="0 0 506 506">

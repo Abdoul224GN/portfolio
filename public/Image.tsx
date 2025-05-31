@@ -3,31 +3,31 @@ import Image from "next/image";
 
 export function GithubIcon({className}:{className?:string}):JSX.Element {
     return <>
-        <img src="images/github.png" className={`h-full ${className}` } alt="github" />
+        <img src="images/github.webp" className={`h-full ${className}` } alt="github" />
     </>
 }
 
 export function LinkDin({className}:{className?:string}) {
     return (
-        <img src="images/linkedin.png" className={`h-full ${className}`} alt="linkedin" />
+        <img src="images/linkedin.webp" className={`h-full ${className}`} alt="linkedin" />
     )
 }
 
 export function TwitterIcon({className}:{className?:string}) {
     return (
-        <img src="images/twitter.png" className={`h-full ${className}`} alt="twitter" />
+        <img src="images/twitter.webp" className={`h-full ${className}`} alt="twitter" />
     )
 }
 
 export function FacebookIcon({className}:{className?:string}) {
     return (
-        <img src="images/Facebook.png" className={`h-full ${className}` } alt="facebook" />
+        <img src="images/facebook.webp" className={`h-full ${className}` } alt="facebook" />
     )
 }
 
 export function InstagramIcon({className}:{className?:string}) {
     return (
-        <img src="images/instagram.png" className={`h-full ${className}`} alt="instagram" />
+        <img src="images/instagram.webp" className={`h-full ${className}`} alt="instagram" />
     )
 }
 export function AvatarImg({className}:{className?:string}) {
@@ -42,7 +42,7 @@ export function MenuImg({className}:{className?:string}) {
 }
 export function Photo({src, className, }:{className?:string, src:string}) {
     return (
-        <Image src={src} width={300} height={300} priority={true} className={` h-auto w-auto ${className}`} alt="menu" />
+        <Image src={src} quality={100} width={300} height={300} priority={true} className={` h-auto w-auto ${className}`} alt="menu" />
     )
 }
 export function ContactPhoto({src, className, }:{className?:string, src?:string}) {
