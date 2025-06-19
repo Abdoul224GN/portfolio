@@ -9,7 +9,7 @@ import {JavaCode, NextjsCode} from "@/components/Badge";
 
 export default function Home() {
     return <>
-        <section className={`mt-10 flex flex-col justify-items-center h-full`}>
+        <section id={`home`} className={`mt-10 flex flex-col justify-items-center h-full`}>
 
             <div className={`flex flex-col md:flex-row items-center`}>
 

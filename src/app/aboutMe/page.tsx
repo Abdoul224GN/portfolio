@@ -5,7 +5,7 @@ import FadeInOnScroll from "@/components/FadeInOnScroll";
 export default function AboutMe() {
     const description:String = "I'm a fullstack Java developer with a strong passion for building high-performance, scalable, and well-structured web applications. I work across the entire stack — from robust Java backends built with clean architecture and SOLID principles, to modern, responsive frontends using frameworks like Next.js. Independent and detail-oriented, I care deeply about code quality, architecture clarity, and user experience. My goal is to create web solutions that are not only functional and efficient, but also intuitive and user-friendly. work independently on end-to-end web projects — from concept to deployment — and I'm always looking for new challenges to take on."
     return <>
-        <section>
+        <section id={`aboutMe`} >
             <Badge>About Me</Badge>
             <div
                 className={`grid max-md:grid-cols-1 grid-cols-2 gap-x-10 mt-5 max-md:shadow-md max-md:bg-muted max-md:shadow-black/15 max-md:rounded-[10px] p-5 h-auto `}>

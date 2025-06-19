@@ -15,7 +15,7 @@ export default function Box({children, className}: { children?: React.ReactNode,
     console.log(showMore);
     return <>
 
-        <section >
+        <section id={`projects`} >
             <Badge>Projects</Badge>
             <div className={`mt-7 flex flex-col gap-5 items-center`}>
                 <motion.div

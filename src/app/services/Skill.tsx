@@ -6,7 +6,6 @@ import {Badge} from "@/components/Badge";
 
 export default function Skill() {
     return <>
-        <section>
             <Badge>Services</Badge>
             {skills.map((skill, index) => (
                 <div
@@ -29,6 +28,5 @@ export default function Skill() {
                     </FadeInOnScroll>
                 </div>
             ))}
-        </section>
     </>
 }
